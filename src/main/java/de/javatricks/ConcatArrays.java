@@ -4,7 +4,7 @@ import com.google.common.collect.ObjectArrays;
 import org.apache.commons.lang3.ArrayUtils;
 
 import java.util.Arrays;
-import java.util.stream.Stream;
+//import java.util.stream.Stream;
 
 public class ConcatArrays {
 
@@ -23,7 +23,7 @@ public class ConcatArrays {
         drinks = ObjectArrays.concat(beer, wine, String.class);
         System.out.println(Arrays.asList(drinks));
 
-        drinks = Stream.concat(Arrays.stream(beer), Arrays.stream(wine)).toArray(String[]::new);
+        //drinks = Stream.concat(Arrays.stream(beer), Arrays.stream(wine)).toArray(String[]::new);
         System.out.println(Arrays.asList(drinks));
     }
 
