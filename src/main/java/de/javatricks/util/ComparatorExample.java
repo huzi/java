@@ -31,12 +31,10 @@ public class ComparatorExample {
     }
 }
 
-class FirstNameComparator implements Comparator{
+class FirstNameComparator implements Comparator<Person>{
 
     @Override
-    public int compare(Object o1, Object o2) {
-        Person first = (Person) o1;
-        Person second = (Person) o2;
+    public int compare(Person first, Person second) {
         return first.getFirstName().compareTo(second.getFirstName());
     }
 }

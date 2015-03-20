@@ -35,9 +35,8 @@ public class PrintStreamVsPrintWriter {
         System.out.println(Arrays.toString(out.toByteArray()));
 
         out = new ByteArrayOutputStream();
-        printWriter = new PrintWriter(out, false);
+        printWriter = new PrintWriter(out, true);
         printWriter.println("öäü?");
-        printWriter.flush();
         System.out.println(Arrays.toString(out.toByteArray()));
 
 
