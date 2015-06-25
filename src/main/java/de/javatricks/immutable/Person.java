@@ -29,7 +29,7 @@ public class Person{
 
     @Override
     public String toString() {
-        //return MoreObjects.toStringHelper(this).add("firstname", firstName).add("lastName", lastName).toString();
-        return null;
+        return MoreObjects.toStringHelper(this).add("firstname", firstName).add("lastName", lastName).toString();
+        //return null;
     }
 }
